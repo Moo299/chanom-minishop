@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniShop ร้านค้าออนไลน์สินค้าไอทีและอุปกรณ์การเรียน</title>
+
+    <!-- ข้อมูลสำหรับการค้นหาและการแชร์เว็บไซต์ -->
+    <meta name="description" content="MiniShop ร้านค้าออนไลน์สินค้าไอทีและอุปกรณ์การเรียน โน้ตบุ๊ก สมาร์ตโฟน หูฟัง แท็บเล็ต เมาส์ ที่ชาร์จ และพาวเวอร์แบงก์ ราคาคุ้มค่า สั่งซื้อง่าย จัดส่งทั่วประเทศ">
+    <meta name="keywords" content="ร้านค้าออนไลน์, สินค้าไอที, อุปกรณ์การเรียน, โน้ตบุ๊ก, สมาร์ตโฟน, หูฟังไร้สาย, แท็บเล็ต, เมาส์ไร้สาย, ที่ชาร์จเร็ว, พาวเวอร์แบงก์, มินิช็อป">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chanom-kaimuk.infinityfree.me/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MiniShop ร้านค้าออนไลน์สินค้าไอทีและอุปกรณ์การเรียน">
+    <meta property="og:description" content="รวมสินค้าไอทีและอุปกรณ์การเรียนคุณภาพดี โน้ตบุ๊ก สมาร์ตโฟน หูฟัง แท็บเล็ต และอุปกรณ์เสริม สั่งซื้อง่าย ราคาคุ้มค่า">
+    <meta property="og:image" content="https://chanom-kaimuk.infinityfree.me/images/cover.jpg">
+    <meta property="og:url" content="https://chanom-kaimuk.infinityfree.me/">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .custom-banner-img {
+        height: 400px;
+        object-fit: cover;
+      }
+      .text-shadow {
+        text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header class="navbar bg-white border-bottom p-3 sticky-top">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand text-danger fw-bold fs-3" href="#"
+          >🛍️ MiniShop</a
+        >
+
+        <nav class="navbar navbar-expand-lg  navbar-light bg-white shadow-sm">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- เส้นตรง 3 ขีดขนานกัน (สลับร่างเป็นสีเข้มอัตโนมัติ) -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- 2. กล่องรายการเมนูลิงก์และระบบค้นหา (ผูก ID สอดรับกับปุ่มแฮมเบอร์เกอร์ด้านบน) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- ปรับให้ไอเทมทุกชิ้นล็อกพิกัดอยู่กึ่งกลางแนวดิ่งด้วย align-items-lg-center -->
+                <ul class="navbar-nav ms-auto fs-6 fw-medium align-items-lg-center">
+                    <li class="nav-item">
+                        <!-- 📌 เอา text-white ออก เพื่อให้ปล่อยสีเข้มตามคลาสแม่ navbar-light -->
+                        <a class="nav-link" href="index.html">🏠 หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- 🔗 ลิงก์ไปยังหน้าคลังสินค้าหน้าแรกจริง -->
+                        <a class="nav-link" href="all-products-p1.html">🛒 สินค้าทั้งหมด</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- 🔗 ลิงก์ไปยังหน้าตารางประวัติการสั่งซื้อ -->
+                        <a class="nav-link" href="order-history.html">📦 ประวัติการสั่งซื้อ</a>
+                    </li>
+
+                    <!-- 🔍 3. ช่องฟอร์มค้นหาสินค้าด่วนแบบ Inline สไตล์มินิมอล -->
+                    <li class="nav-item ms-lg-3 my-2 my-lg-0">
+                        <form class="d-flex" role="search" action="#">
+                            <!-- ช่องกรอกคำค้น ขอบมนแคปซูล พื้นหลังสว่างตัดขอบเทาจาง -->
+                            <input class="form-control form-control-sm me-2 rounded-pill bg-light text-dark border-secondary-subtle" type="search" placeholder="🔍 ค้นหาสินค้า..." aria-label="Search">
+                            <!-- ปุ่มกดส่งคำค้นขอบเส้นสีเข้มมินิมอล -->
+                            <button class="btn btn-outline-dark btn-sm rounded-pill fw-medium" type="submit">ค้นหา</button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mb-2 mb-lg-0">
+                        <!-- 🔗 ปุ่มลิงก์สลับไปหน้าจอระบบล็อกอินสมาชิก -->
+                        <a class="btn btn-danger btn-sm text-white px-3 fw-bold rounded-pill" href="login.html">🔓 เข้าสู่ระบบ</a>
+                    </li>
+
+                    <!-- ปุ่มตะกร้าสินค้า -->
+                    <li class="nav-item ms-lg-3 mb-2 mb-lg-0">
+                        <a class="btn btn-sm text-white px-3 fw-bold rounded-pill position-relative d-inline-flex align-items-center justify-content-center" href="cart.html" role="button" aria-label="ตะกร้าสินค้า">
+                            <img src="/images/cart-icon.png" alt="ตะกร้าสินค้า" style="width: 35px; height: 25px; object-fit: contain; display: block;" />
+                            <span id="cartCountBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">0</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+</nav>
+
+      </div>
+    </header>
+    <h1> Contact Us</h1>
+    <ul>
+      <li>Phone: 123-456-7890</li>
+      <li>Email: chanon.cho@nvc.ac.th</li>
+    </ul>
+
+    <!-- โหลด JavaScript ของ Bootstrap ก่อน แล้วตามด้วยสคริปต์ตะกร้าสินค้า (js/cart.js)
+         cart.js ประกอบด้วยฟังก์ชัน addToCart, addToCartFromCard และ updateBadge เพื่อจัดการ localStorage และ badge จำนวนรายการ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <!-- 📌 สังเกต: แท็ก p จะไม่มีคลาสสีล็อกไว้ เพื่อให้สีเปลี่ยนตามกล่องแม่ด้านบนได้อย่างอิสระ -->
+      <p class="m-0 fs-6 fw-light">
+        &copy; 2026 MiniShop - All Rights Reserved. พัฒนาด้วย Bootstrap 5
+        โดยนักศึกษา เทคโนโลยีธุรกิจดิจิทัล
+      </p>
+    </div>
+  </footer>
+</html>
